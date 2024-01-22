@@ -18,7 +18,7 @@ const HomePage = () => {
                     </p>
                 </div>
                 <Search />
-                <div className='bg-slate-400 mx-[55px] sm:mx-[200px] lg:mx-[350px] xl:mx-[540px] mt-16 xl:mt-10 py-2 rounded-md'>
+                <div className='bg-[#D9D9D91D] mx-[55px] sm:mx-[200px] lg:mx-[350px] xl:mx-[540px] mt-16 xl:mt-10 py-2 rounded-md'>
                     <p className='text-white text-center'
                     >
                         <span className='font-bold'>Trending: </span>

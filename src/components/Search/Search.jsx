@@ -32,15 +32,15 @@ const Search = () => {
 
     return (
         <div className='flex justify-center'>
-            <div className='w-[85%] md:w-[65%] xl:w-[40%] mt-20 py-3 bg-slate-400 border-solid border-2 border-slate-300 rounded-md'>
+            <div className='w-[85%] md:w-[65%] xl:w-[40%] mt-20 py-3 bg-[#D9D9D91D] border-solid border-2 border-[#B6B6B66E] rounded-md'>
                 <div className='flex justify-between items-center'>
                     <div className='flex justify-center items-center mx-1 sm:mx-6'>
-                        <FiSearch className='bg-slate-400 text-white text-2xl font-extrabold' />
-                        <div className='bg-slate-400 text-white text-3xl mx-1 md:mx-5 mt-[-10px]'>|</div>
+                        <FiSearch className='text-white text-2xl font-extrabold' />
+                        <div className=' text-white text-3xl mx-1 md:mx-5 mt-[-10px]'>|</div>
                         <input
                             type="text"
-                            placeholder='Search'
-                            className='w-[135px] sm:w-[200px] md:w-auto text-white text-xl sm:text-2xl bg-slate-400 outline-none px-1 sm:px-2 rounded-md'
+                            placeholder='Start New Search'
+                            className='bg-[#d9d9d904] placeholder-[white] w-[135px] sm:w-[200px] md:w-auto text-white text-xl sm:text-2xl outline-none px-1 sm:px-2 rounded-md'
                             value={searchInput}
                             onChange={(e) => setSearchInput(e.target.value)}
                             required
