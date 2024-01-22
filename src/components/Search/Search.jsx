@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { pixabayAPI } from "../../api/API";
 import { FiSearch } from "react-icons/fi";
@@ -31,16 +31,16 @@ const Search = () => {
     }
 
     return (
-        <Fragment>
-            <div className='mx-[2%] sm:mx-[15%] xl:mx-[30%] mt-20 py-3 pr-5 bg-slate-400 border-solid border-2 border-slate-300 rounded-md'>
+        <div className='flex justify-center'>
+            <div className='w-[85%] md:w-[65%] xl:w-[40%] mt-20 py-3 bg-slate-400 border-solid border-2 border-slate-300 rounded-md'>
                 <div className='flex justify-between items-center'>
-                    <div className='flex justify-center items-center mx-2 sm:mx-6'>
+                    <div className='flex justify-center items-center mx-1 sm:mx-6'>
                         <FiSearch className='bg-slate-400 text-white text-2xl font-extrabold' />
                         <div className='bg-slate-400 text-white text-3xl mx-1 md:mx-5 mt-[-10px]'>|</div>
                         <input
                             type="text"
                             placeholder='Search'
-                            className='text-white text-2xl bg-slate-400 outline-none px-1 sm:px-2 rounded-md'
+                            className='w-[135px] sm:w-[200px] md:w-auto text-white text-xl sm:text-2xl bg-slate-400 outline-none px-1 sm:px-2 rounded-md'
                             value={searchInput}
                             onChange={(e) => setSearchInput(e.target.value)}
                             required
@@ -49,14 +49,14 @@ const Search = () => {
                     <Link to="/images-results">
                         <button
                             onClick={searchImageHandler}
-                            className='text-white text-xl border-solid border-2 white mx-2 sm:mx-1 px-2 sm:px-3 rounded-md'
+                            className='text-white text-xl border-solid border-2 white mx-1 sm:mx-5 px-2 sm:px-3 hover:bg-slate-300 rounded-md'
                         >
                             GO!
                         </button>
                     </Link>
                 </div>
             </div>
-        </Fragment>
+        </div>
     )
 }
 
