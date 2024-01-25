@@ -34,7 +34,7 @@ const SingleImage = () => {
                         <img
                             src={image?.webformatURL}
                             alt="image"
-                            className="mt-5 mx-3 sm:mx-5 w-[320px]  sm:w-[720px] h-[260px] sm:h-[420px] rounded-lg"
+                            className="mt-5 mx-3 sm:mx-5 w-[320px]  sm:w-[720px] h-[200px] sm:h-[420px] rounded-lg"
                         />
                     </div>
                     <div className="mx-10">
