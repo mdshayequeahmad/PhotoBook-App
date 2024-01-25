@@ -34,7 +34,7 @@ const SingleImage = () => {
                         <img
                             src={image?.webformatURL}
                             alt="image"
-                            className="mt-5 mx-3 sm:mx-5 w-[320px] sm:w-[720px] sm:h-[410px] rounded-lg"
+                            className="mt-5 mx-3 sm:mx-5 w-[320px]  sm:w-[720px] h-[260px] sm:h-[420px] rounded-lg"
                         />
                     </div>
                     <div className="mx-10">
@@ -79,7 +79,18 @@ const SingleImage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mx-5 mt-5 text-xl text-center font-bold'>Tags:  <span className='bg-[#767676] px-2 py-[3px] font-medium rounded-md'>{image?.tags.split(",")}</span></div>
+                <div
+                    className='mt-5 text-xl text-center font-bold'
+                >
+                    Tags:  {image?.tags.split(", ").map((el, i) => (
+                        <span
+                            key={i}
+                            className='bg-[#767676] m-1 px-1 py-[2px] font-medium rounded-md'
+                        >
+                            {el}
+                        </span>
+                    ))}
+                </div>
             </div>
         </div>
     )

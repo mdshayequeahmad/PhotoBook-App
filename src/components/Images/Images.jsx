@@ -23,7 +23,13 @@ const Images = () => {
                                 <div onClick={() => imageIdHandler(image.id)} className='cursor-pointer'>
                                     <img src={image.webformatURL} alt="image" className='xl:h-[280px] rounded-lg' />
                                 </div>
-                                <p className='bg-slate-100 mt-1 px-3 py-1 rounded-md'>{image.tags.split(',')}</p>
+                                <p
+                                    className='text-center mt-2'
+                                >
+                                    {image.tags.split(',').map((el, i) => (
+                                        <span key={i} className='bg-slate-100 mx-1 px-3 py-[3px] rounded-md'>{el}</span>
+                                    ))}
+                                </p>
                             </div>
                         ))}
                     </div>
